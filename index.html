@@ -29,12 +29,11 @@
 [data-theme="dark"] .hdr-hero-overlay{background:linear-gradient(to bottom,rgba(26,30,26,0) 0%,rgba(26,30,26,0.05) 40%,rgba(26,30,26,0.72) 78%,rgba(26,30,26,1) 100%)}
 [data-theme="dark"] .ev-experience{background:oklch(99.2% 0.012 80)}
 [data-theme="dark"] .btn-outline{background:rgba(35,39,35,0.85);color:var(--text)}
-[data-theme="dark"] .modal-box{box-shadow:0 20px 64px rgba(0,0,0,0.4);animation:modalBoxIn 0.32s cubic-bezier(0.16,1,0.3,1) both}
+[data-theme="dark"] .modal-box{box-shadow:0 20px 64px rgba(0,0,0,0.4)}
 
 /* ── dark mode hover overrides ── */
 [data-theme="dark"] .clear-btn:hover{background:rgba(201,124,98,0.15)}
 [data-theme="dark"] .mood-pill:hover{background:var(--must);border-color:var(--terra)}
-[data-theme="dark"] .pill.on{background:var(--border);color:var(--text);border-color:var(--text2)}
 [data-theme="dark"] .pill:hover{background:rgba(255,255,255,0.06)}
 [data-theme="dark"] .btn-more:hover{background:rgba(255,255,255,0.05)}
 [data-theme="dark"] .act-src:hover{background:rgba(100,160,200,0.12)}
@@ -56,10 +55,9 @@ body{font-family:'Manrope',system-ui,sans-serif;background:var(--bg);color:var(-
 .hdr-hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(247,243,236,0) 0%,rgba(247,243,236,0.05) 40%,rgba(247,243,236,0.72) 78%,rgba(247,243,236,1) 100%)}
 .hdr-hero-content{position:absolute;bottom:0;left:0;right:0;padding:0 36px 26px}
 .hdr-inner{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;max-width:1280px;margin:0 auto}
-@keyframes heroIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
-.hdr-l h1{font-family:'Young Serif',Georgia,serif;font-size:80px;font-weight:600;letter-spacing:-1.5px;color:var(--text);line-height:0.9;animation:heroIn 0.7s cubic-bezier(0.16,1,0.3,1) both}
-.hdr-l p{font-size:13px;color:var(--text2);margin-top:10px;font-weight:400;letter-spacing:0.01em;animation:heroIn 0.7s cubic-bezier(0.16,1,0.3,1) 0.09s both}
-.hdr-r{display:flex;gap:8px;flex-shrink:0;padding-bottom:4px;animation:heroIn 0.7s cubic-bezier(0.16,1,0.3,1) 0.16s both}
+.hdr-l h1{font-family:'Young Serif',Georgia,serif;font-size:80px;font-weight:600;letter-spacing:-1.5px;color:var(--text);line-height:0.9}
+.hdr-l p{font-size:13px;color:var(--text2);margin-top:10px;font-weight:400;letter-spacing:0.01em}
+.hdr-r{display:flex;gap:8px;flex-shrink:0;padding-bottom:4px}
 .btn-dark{background:var(--sky);color:#fff;border:none;border-radius:8px;padding:8px 17px;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;letter-spacing:0.01em}
 .btn-dark:hover{background:#558999}
 .btn-outline{background:none;border:1px solid rgba(46,52,46,0.22);color:var(--text2);border-radius:8px;padding:8px 17px;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;letter-spacing:0.01em;white-space:nowrap}
@@ -75,7 +73,7 @@ body{font-family:'Manrope',system-ui,sans-serif;background:var(--bg);color:var(-
 .mood-time-group{display:flex;gap:6px;align-items:center;margin-left:auto}
 .btn-more{background:none;border:1px solid var(--border);border-radius:20px;padding:6px 14px;font-size:12px;font-weight:500;color:var(--text2);cursor:pointer;white-space:nowrap;font-family:inherit}
 .btn-more:hover{background:var(--bg);color:var(--text)}
-.btn-more.open{color:var(--text);background:var(--bg);border-color:var(--border)}
+.btn-more.open{color:var(--text);background:var(--bg);border-color:rgba(46,52,46,0.28)}
 .clear-btn{background:none;border:1px solid #E4A593;border-radius:20px;padding:6px 14px;font-size:12px;font-weight:500;color:var(--terra);cursor:pointer;font-family:inherit}
 .clear-btn:hover{background:#FEF0EC}
 
@@ -86,17 +84,16 @@ body{font-family:'Manrope',system-ui,sans-serif;background:var(--bg);color:var(-
 .pill{padding:5px 13px;border-radius:20px;border:1px solid var(--border);font-size:12px;font-weight:500;cursor:pointer;background:var(--card);color:var(--text2);white-space:nowrap;font-family:inherit}
 .pill:hover{background:var(--bg)}
 .pill.on{background:var(--text);color:#fff;border-color:var(--text)}
-.pill.on-low{background:var(--bg);color:var(--text);border-color:var(--border)}
-.pill.on-med{background:var(--bg);color:var(--text);border-color:var(--border)}
-.pill.on-high{background:var(--bg);color:var(--text);border-color:var(--border)}
+.pill.on-low{background:var(--bg);color:var(--text);border-color:rgba(46,52,46,0.35)}
+.pill.on-med{background:var(--bg);color:var(--text);border-color:rgba(46,52,46,0.35)}
+.pill.on-high{background:var(--bg);color:var(--text);border-color:rgba(46,52,46,0.35)}
 .sep{width:0.5px;height:14px;background:var(--border);margin:0 2px;flex-shrink:0}
 
 /* ── body / layout ── */
 .body{padding:60px 36px 96px;max-width:1280px;margin:0 auto}
 
 /* ── section headers ── */
-.sec-hdr{font-family:'Young Serif',Georgia,serif;font-size:22px;font-weight:500;color:var(--text);margin-bottom:28px;display:flex;align-items:center;gap:14px;letter-spacing:-0.3px;line-height:1;opacity:0;transform:translateY(8px);transition:opacity 0.5s cubic-bezier(0.16,1,0.3,1),transform 0.5s cubic-bezier(0.16,1,0.3,1)}
-.sec-hdr.revealed{opacity:1;transform:translateY(0)}
+.sec-hdr{font-family:'Young Serif',Georgia,serif;font-size:22px;font-weight:500;color:var(--text);margin-bottom:28px;display:flex;align-items:center;gap:14px;letter-spacing:-0.3px;line-height:1}
 .sec-line{flex:1;height:0.5px;background:var(--border)}
 .sec-count{font-size:13px;font-weight:400;color:var(--text2);font-family:'Manrope',sans-serif;letter-spacing:0}
 .sec-link{font-size:12px;font-weight:500;color:var(--text2);cursor:pointer;text-decoration:none;font-family:'Manrope',sans-serif;flex-shrink:0;border-bottom:0.5px solid var(--border)}
@@ -147,26 +144,21 @@ body{font-family:'Manrope',system-ui,sans-serif;background:var(--bg);color:var(-
 .cwhy{font-family:'Manrope',system-ui,sans-serif;font-size:13px;font-style:normal;color:var(--text-muted);line-height:1.6;margin-bottom:13px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .cdetails{font-size:13px;color:var(--text2);line-height:1.65;background:var(--bg);border-radius:9px;padding:12px 13px;margin-bottom:11px;border:1px solid var(--border);font-family:'Manrope',sans-serif}
 .cdetails.hidden{display:none}
-@keyframes hintBreathe{0%,100%{opacity:0.22}55%{opacity:0.55}}
-.cexpand-hint{text-align:center;font-size:10px;color:var(--text2);opacity:0.25;margin:-6px 0 6px;letter-spacing:3px;pointer-events:none;user-select:none}
-.card:hover .cexpand-hint{animation:hintBreathe 2.8s ease-in-out infinite}
 
 /* ── card actions ── */
 .cactions{display:flex;align-items:center;gap:0;margin-top:auto;padding-top:11px;border-top:1px solid var(--border)}
 .act{background:none;border:none;cursor:pointer;font-size:12px;font-weight:500;color:var(--text2);padding:3px 8px;border-radius:6px;white-space:nowrap;font-family:inherit}
 .act:hover{background:var(--bg);color:var(--text)}
 .act.saved{color:var(--terra)}
-.act-hide{color:var(--text2);opacity:0.5;font-weight:400}
+.act-hide{color:var(--text2);opacity:0.5}
 .act-hide:hover{opacity:1;color:var(--church)}
-.act-src{color:var(--sky);text-decoration:none;font-size:12px;font-weight:500;padding:3px 8px;border-radius:6px;font-family:inherit;transition:color 0.12s}
+.act-src{color:#4A7CC9;text-decoration:none;font-size:12px;font-weight:500;padding:3px 8px;border-radius:6px;font-family:inherit}
 .act-src:hover{background:rgba(74,124,201,0.08)}
 .act-more{margin-left:auto;color:var(--border);font-size:12px}
 .act-more:hover{color:var(--text2)!important;background:var(--bg)!important}
 
 /* ── surprise modal ── */
-@keyframes modalIn{from{opacity:0}to{opacity:1}}
-@keyframes modalBoxIn{from{opacity:0;transform:translateY(18px) scale(0.97)}to{opacity:1;transform:translateY(0) scale(1)}}
-.modal-overlay{position:fixed;inset:0;background:rgba(247,243,236,0.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);contain:strict;z-index:300;display:flex;align-items:center;justify-content:center;padding:24px;animation:modalIn 0.22s ease-out both}
+.modal-overlay{position:fixed;inset:0;background:rgba(247,243,236,0.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);contain:strict;z-index:300;display:flex;align-items:center;justify-content:center;padding:24px}
 .modal-box{background:var(--card);border:1px solid var(--border);border-radius:20px;max-width:440px;width:100%;padding:32px;position:relative;box-shadow:0 20px 64px rgba(46,52,46,0.14)}
 .modal-close{position:absolute;top:16px;right:16px;background:none;border:none;cursor:pointer;color:var(--text2);font-size:13px;padding:5px 9px;border-radius:7px;font-family:inherit;font-weight:500;line-height:1}
 .modal-close:hover{background:var(--bg);color:var(--text)}
@@ -181,15 +173,13 @@ body{font-family:'Manrope',system-ui,sans-serif;background:var(--bg);color:var(-
 .modal-act:hover{background:var(--bg);color:var(--text)}
 .modal-act.saved{color:var(--terra);border-color:#E4A593}
 .modal-act.saved:hover{background:#FEF0EC}
-.modal-act-src{color:var(--sky);text-decoration:none;font-size:12px;font-weight:500;padding:7px 16px;border:1px solid rgba(74,124,201,0.3);border-radius:20px;font-family:inherit}
+.modal-act-src{color:#4A7CC9;text-decoration:none;font-size:12px;font-weight:500;padding:7px 16px;border:1px solid rgba(74,124,201,0.3);border-radius:20px;font-family:inherit}
 .modal-act-src:hover{background:rgba(74,124,201,0.06)}
 .modal-act-again{background:var(--green);color:#fff;border:none;border-radius:20px;padding:7px 16px;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;margin-left:auto}
 .modal-act-again:hover{background:#445a3f}
 
 /* ── saved section ── */
-@keyframes sectionReveal{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 #saved-section{margin-top:32px}
-#saved-section:not(.hidden){animation:sectionReveal 0.45s cubic-bezier(0.16,1,0.3,1) both}
 .saved-list{display:flex;flex-direction:column;gap:8px}
 .saved-item{background:var(--card);border:1px solid var(--border);border-radius:11px;padding:13px 16px;display:flex;align-items:center;gap:10px}
 .saved-item-info{flex:1;min-width:0}
@@ -199,17 +189,15 @@ body{font-family:'Manrope',system-ui,sans-serif;background:var(--bg);color:var(-
 .saved-item-rm:hover{color:var(--terra)}
 
 /* ── empty / hidden bar ── */
-.empty-state{text-align:center;padding:80px 20px;animation:heroIn 0.4s cubic-bezier(0.16,1,0.3,1) both}
+.empty-state{text-align:center;padding:80px 20px}
 .empty-state p{font-family:'Young Serif',Georgia,serif;font-size:18px;font-style:normal;color:var(--text2);margin-bottom:20px}
 .empty-suggestions{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
 .empty-suggestions button{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:6px 16px;font-size:12px;font-weight:500;color:var(--text2);cursor:pointer;font-family:inherit}
 .empty-suggestions button:hover{background:var(--bg)}
 .empty-suggestions button.clr{color:var(--terra);border-color:#E4A593}
 .empty-suggestions button.clr:hover{background:#FEF0EC}
-@keyframes barDrop{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
-.hidden-bar{display:flex;align-items:center;justify-content:center;gap:8px;padding:14px;margin-top:14px;font-size:12px;color:var(--text2);font-family:'Manrope',sans-serif;animation:barDrop 0.3s cubic-bezier(0.16,1,0.3,1) both}
-.hidden-bar button{background:none;border:none;cursor:pointer;color:var(--text2);font-size:12px;text-decoration:underline;font-family:inherit;transition:color 0.12s}
-.hidden-bar button:hover{color:var(--text)}
+.hidden-bar{display:flex;align-items:center;justify-content:center;gap:8px;padding:14px;margin-top:14px;font-size:12px;color:var(--text2);font-family:'Manrope',sans-serif}
+.hidden-bar button{background:none;border:none;cursor:pointer;color:var(--text2);font-size:12px;text-decoration:underline;font-family:inherit}
 .hidden-bar button:hover{color:var(--text)}
 .hidden{display:none!important}
 
@@ -248,7 +236,6 @@ body{font-family:'Manrope',system-ui,sans-serif;background:var(--bg);color:var(-
 /* ── card interactivity ── */
 .card{transition:transform 0.15s ease-out,box-shadow 0.15s ease-out}
 .card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(46,52,46,0.09)}
-.card:has(.cdetails:not(.hidden)){box-shadow:0 10px 36px rgba(46,52,46,0.13);border-color:rgba(46,52,46,0.22);transform:translateY(-1px)}
 .card:active{transform:translateY(0);box-shadow:none}
 .cdetails{margin-top:12px;padding-top:12px;border-top:1px solid var(--border);font-size:13px;line-height:1.6;color:var(--text-muted);animation:detailFade 0.2s ease-out}
 @keyframes detailFade{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
@@ -275,8 +262,7 @@ body{font-family:'Manrope',system-ui,sans-serif;background:var(--bg);color:var(-
 /* ── location links ── */
 .loc-link{color:var(--sky);text-decoration:none;display:inline-flex;align-items:center;gap:3px}
 .loc-link:hover{color:var(--church);text-decoration:underline;text-underline-offset:2px}
-.loc-icon{flex-shrink:0;margin-top:1px;opacity:0.85;transition:transform 0.2s cubic-bezier(0.16,1,0.3,1)}
-.loc-link:hover .loc-icon{transform:translateY(-2px)}
+.loc-icon{flex-shrink:0;margin-top:1px;opacity:0.85}
 
 /* ── dark mode switch (fixed top-right) ── */
 .dark-switch-wrap{
@@ -325,6 +311,7 @@ body{font-family:'Manrope',system-ui,sans-serif;background:var(--bg);color:var(-
       </div>
       <div class="hdr-r">
         <button type="button" class="btn-outline" onclick="doSurprise()">🎲 Surprise me</button>
+        <button type="button" class="btn-dark" onclick="sendPrompt('refresh events')">↻ Refresh</button>
       </div>
     </div>
   </div>
@@ -338,13 +325,13 @@ body{font-family:'Manrope',system-ui,sans-serif;background:var(--bg);color:var(-
     <button type="button" class="mood-pill" data-mood="active" aria-pressed="false" onclick="setMood(this,'active')">⚡ Active</button>
     <button type="button" class="mood-pill" data-mood="markets" aria-pressed="false" onclick="setMood(this,'markets')">🧺 Markets</button>
     <span class="mood-sep"></span>
-    <button type="button" class="btn-more" id="more-btn" onclick="toggleMoreFilters(this)">Refine ▾</button>
-    <button type="button" class="clear-btn" id="clrbtn" onclick="clearAll()" style="display:none">✕ Reset</button>
+    <button type="button" class="btn-more" id="more-btn" onclick="toggleMoreFilters(this)">More filters ▾</button>
+    <button type="button" class="clear-btn" id="clrbtn" onclick="clearAll()" style="display:none">✕ Clear</button>
     <div class="mood-time-group">
       <button type="button" class="pill" data-g="time" data-v="today" aria-pressed="false" onclick="setTime(this,'today')">Today</button>
       <button type="button" class="pill" data-g="time" data-v="weekend" aria-pressed="false" onclick="setTime(this,'weekend')">Weekend</button>
-      <button type="button" class="pill on" data-g="time" data-v="7days" aria-pressed="true" onclick="setTime(this,'7days')">This week</button>
-      <button type="button" class="pill" data-g="time" data-v="30days" aria-pressed="false" onclick="setTime(this,'30days')">This month</button>
+      <button type="button" class="pill on" data-g="time" data-v="7days" aria-pressed="true" onclick="setTime(this,'7days')">7 days</button>
+      <button type="button" class="pill" data-g="time" data-v="30days" aria-pressed="false" onclick="setTime(this,'30days')">30 days</button>
     </div>
   </div>
 </nav>
@@ -382,7 +369,7 @@ body{font-family:'Manrope',system-ui,sans-serif;background:var(--bg);color:var(-
 
 <main class="body">
   <div id="top-picks">
-    <h2 class="sec-hdr">Don't miss<span class="sec-line"></span></h2>
+    <h2 class="sec-hdr">Top picks<span class="sec-line"></span></h2>
     <div class="tp-row" id="tp-row"></div>
   </div>
   <div id="disc">
@@ -460,6 +447,18 @@ const EV=[
    src:"https://visit.freiburg.de/halbtrocken-open-air-pop-indie-pop",top:false,
    det:"Same vineyard, quieter day. Pop and indie from regional artists, original songs only, starting at 14:00. The least intense day of the Halbtrocken weekend — good if you want the setting without the Saturday crowd."},
 
+  {id:6,
+   type:"event",
+   tags:["locals-know","atmospheric"],
+   title:"KoKi Cinema Night: Bob Dylan — Don't Look Back",
+   german:"D.A. Pennebaker, 1967",
+   date:"2026-05-27",dd:"Wed 27 May",time:"21:45",
+   loc:"Kommunales Kino, Urachstr. 40",price:"~€8",pv:8,dist:1,
+   cat:"cinema",nrg:"low",
+   why:"Pennebaker's 1967 fly-on-the-wall film of Dylan's UK tour — one of the great music documentaries, rarely screened in cinemas. Part of KoKi's Dylan 85th birthday series.",
+   src:"https://www.koki-freiburg.de/dont-look-back/",top:false,
+   det:"KoKi is Freiburg's municipal cinema — arthouse, curated, in the same courtyard as the Wiehre flea market. This is the real thing: Pennebaker follows Dylan through 1965 England with a handheld camera, no narration, no interviews. You get Dylan arguing with journalists, performing in tiny rooms, being genuinely unpleasant and extraordinary. The bar next door (Café Barbette) is open before and after."},
+
   {id:7,
    type:"event",
    tags:["atmospheric","niche-community"],
@@ -471,6 +470,18 @@ const EV=[
    why:"1988 documentary about Monk on tour — one of the few films that actually captures what jazz looks like from the inside. Café Barbette is open next door for before and after.",
    src:"https://www.koki-freiburg.de/thelonious-monk-straight-no-chaser/",top:false,
    det:"Part of KoKi's 'Round Midnight' jazz cinema series. The 1988 film follows Monk on tour and at home — you see him at the piano, in hotel rooms, in conversation. Charlotte Zwerin directed it with remarkable access. Less biographical, more portrait. The bar is open during the screening."},
+
+  {id:8,
+   type:"event",
+   tags:["seasonal","worth-noting"],
+   title:"Magali Reus: Salt — Sculpture at the Kunstverein",
+   german:null,
+   date:"2026-05-26",dd:"Ongoing until 26 Jul",time:"Wed–Sun, see website",
+   loc:"Kunstverein Freiburg, Dreisamstr. 21",price:"Check website",pv:8,dist:0.5,
+   cat:"culture",nrg:"low",
+   why:"Dutch sculptor's first Freiburg show — industrial-scale objects that sit somewhere between a loading dock and an organism. The building is a converted 19th-century bathhouse.",
+   src:"https://www.kunstvereinfreiburg.de/",top:false,
+   det:"Magali Reus makes large objects that feel like they arrived from a slightly wrong industrial process — rubbery, metallic, quietly wrong. This is her first show at the Kunstverein Freiburg, which itself is worth visiting: founded 1827, housed in a converted bathhouse with beautiful original tile work. Running until July 26, so no rush, but no reason to leave it."},
 
   {id:9,
    type:"event",
@@ -485,6 +496,17 @@ const EV=[
    det:"First night of Halbtrocken Open Air. Artist RIAN headlines alongside regional artists new to the festival. Original music only. The Friday crowd tends to be smaller — the site still has room to breathe."},
 
   /* ── NEW CATEGORIES ─────────────────────────────────────────────────── */
+  {id:10,
+   type:"experience",
+   tags:["seasonal","worth-driving","best-at-sunset"],
+   title:"Kaiserstuhl Vineyard Walk — Between Ihringen and Achkarren",
+   german:"Kaiserstuhl Weinbergspaziergang",
+   date:"2026-05-26",dd:"Any day this week",time:"Self-guided",
+   loc:"Ihringen / Achkarren, Kaiserstuhl (~25 km from Freiburg)",price:"Free",pv:0,dist:25,
+   cat:"nature",nrg:"medium",
+   why:"The Kaiserstuhl volcanic plateau has the warmest microclimate in Germany. Late May is when the vines are just leafing out and the wild orchids are still on the terraced paths between villages.",
+   src:"https://www.kaiserstuhl.de/aktiv/wandern/",top:false,
+   det:"The Kaiserstuhl is a volcanic island in the Rhine plain — ancient, warm, completely unlike the rest of Baden. The path between Ihringen and Achkarren follows dry-stone terraces through Pinot Noir and Spätburgunder vines. Wild orchids in May and June. The villages have small Weinstuben that open without reservations. Last train from Breisach back to Freiburg runs until late."},
 
   {id:11,
    type:"event",
@@ -509,6 +531,18 @@ const EV=[
    why:"Freiburg's Latin night institution — Reggaeton, Salsa, Bachata, Merengue — every Saturday at 22:00 in a basement venue that fills with regulars.",
    src:"https://mamita.club/de/samstag/",top:false,
    det:"Mamita is one of the few genuinely local nightlife institutions left in the Altstadt — a basement Latin club on Nußmannstraße that runs Gran Fiesta Latina every Saturday. The music: Reggaeton, Electro Latino, Salsa, Merengue, Bachata, current charts. Crowd is mixed, regulars outnumber tourists, starts genuinely late. Small enough to have actual energy."},
+
+  {id:13,
+   type:"event",
+   tags:["locals-know","seasonal"],
+   title:"Museum für Neue Kunst: Sport & Art",
+   german:null,
+   date:"2026-05-26",dd:"Ongoing until 11 Oct",time:"Tue–Sun 10:00–17:00",
+   loc:"Museum für Neue Kunst, Marienstr. 10a",price:"~€8",pv:8,dist:0.5,
+   cat:"culture",nrg:"low",
+   why:"An exhibition that asks who gets to play and who gets excluded — sport as a lens for body politics, access, and idealisation. More uncomfortable than the title suggests.",
+   src:"https://museen.freiburg.de/",top:false,
+   det:"The Museum für Neue Kunst sits in the Colombipark, five minutes from the Altstadt. The Sport & Art exhibition pairs works about athletic idealisation with questions about inclusion and the politics of the body. More interesting than the combined name implies — runs until October, no need to rush, but the building itself is quiet and worth spending an afternoon in."},
 
   {id:14,
    type:"event",
@@ -572,15 +606,262 @@ const EV=[
    src:"https://www.vogtsburg.de/de-de/freizeit-veranstaltungen/veranstaltungskalender",top:false,
    det:"Vogtsburg is a municipality of eight wine villages across the Kaiserstuhl crater rim. Every Sunday from 10 May to 14 June, local estates open temporary wine stations at viewpoints — you walk up, order a glass, look at Alsace and the Vosges. No tickets, no crowd management. Drive or take the S-Bahn to Breisach and cycle in from there."},
 
+  {id:21,
+   type:"event",
+   tags:["locals-know","niche-community"],
+   title:"FreiLab Reparatur-Café — Tech Repair Night",
+   german:null,
+   date:"2026-05-26",dd:"Tue 26 May",time:"18:00–21:00",
+   loc:"FreiLab, Ensisheimer Str. 4, Freiburg-Haslach",price:"Free — donations welcome",pv:0,dist:3,
+   cat:"local-oddity",nrg:"low",
+   why:"The hackerspace repair café — better for electronics and tech than the main Repair Café. Second Tuesday of the month. Tonight.",
+   src:"https://www.reparatur-initiativen.de/reparatur-cafe-freilab",top:false,
+   det:"FreiLab is Freiburg's volunteer hackerspace — volunteers with actual technical skills specialising in electronics, circuits, and devices the general repair café does not handle. Every second Tuesday, 18:00–21:00, Ensisheimer Straße 4 in Haslach. Bring a broken device; the people there generally know what is worth fixing. Relaxed, social, genuinely useful."},
+
   /* ── WORKSHOPS ────────────────────────────────────────────────────────── */
+  {id:19,
+   type:"experience",
+   tags:["tactile","locals-know","recurring"],
+   title:"Keramikwerkstatt in der Fabrik — Ceramics Courses",
+   german:null,
+   date:"2026-05-26",dd:"Any day this week",time:"See website for schedule",
+   loc:"Fabrik Freiburg, Habsburgerstraße 9",price:"From €165 per course",pv:165,dist:1.5,
+   cat:"making",nrg:"medium",
+   why:"A serious ceramics studio in a converted factory — around two dozen courses a year with instructors from Germany and abroad. Wheel-throwing, hand-building, Raku, porcelain.",
+   src:"https://www.fabrik-keramik.de/",top:false,
+   det:"The Keramikwerkstatt is part of the Fabrik Freiburg — a listed old factory used for craft, culture, and ecological projects. Courses run year-round with visiting instructors. Check the website for the next available session. The quality of instruction is not what you find at commercial pottery drop-ins."},
+
+  {id:20,
+   type:"experience",
+   tags:["tactile","locals-know","recurring"],
+   title:"Kreativ Lab Freiburg — Open Workshop Programme",
+   german:null,
+   date:"2026-05-26",dd:"Any day this week",time:"See website",
+   loc:"Schwarzwaldstraße 171a, Freiburg",price:"Varies (~€25+ per session)",pv:25,dist:2,
+   cat:"making",nrg:"medium",
+   why:"Small creative studio on Schwarzwaldstraße running open workshops in ceramics, goldsmithing, printing, and jewellery. Drop-in and short-course formats.",
+   src:"https://kreativ-lab-freiburg.de/",top:false,
+   det:"On Schwarzwaldstraße, south of the centre. Hands-on workshops across ceramics, painting, goldsmithing, printing, and fashion jewellery. Some are drop-in, some require booking. More personal than art-school programmes — smaller groups, actual skill transfer."},
 
   /* ── FARMS + SEASONAL FOOD ────────────────────────────────────────────── */
+  {id:22,
+   type:"experience",
+   tags:["seasonal","locals-know"],
+   title:"Pick-Your-Own Strawberries — Keidelbad Field",
+   german:"Selbstpflücker-Erdbeerfeld Keidelbad",
+   date:"2026-05-26",dd:"Any day this week",time:"Morning (early gets best rows)",
+   loc:"Tiengener Str. (near Keidel Thermalbad), Freiburg",price:"Pay per kg (~€4–6/kg)",pv:5,dist:4,
+   cat:"farm",nrg:"low",
+   why:"A pick-your-own strawberry field inside Freiburg — late May is peak season. Operated by Hollihof Dietsche from Hartheim.",
+   src:"https://www.badische-zeitung.de/auf-diesen-feldern-bei-freiburg-und-in-suedbaden-kann-man-erdbeeren-selbst-pfluecken",top:false,
+   det:"A few hundred metres from the Keidel thermal baths on Tiengener Straße, south of the centre. You arrive, take a container, pick. The strawberry season in Freiburg runs May through mid-June. Go in the morning before the best rows are taken. Run by the Hollihof Dietsche from Hartheim — a working farm bringing its field into the city each season."},
+
+  {id:23,
+   type:"experience",
+   tags:["seasonal","locals-know"],
+   title:"Pick-Your-Own Strawberries — Naturgut Hörnle, Schallstadt",
+   german:"Biodynamisch, Selbstpflücken",
+   date:"2026-05-26",dd:"Any day this week",time:"Morning",
+   loc:"Naturgut Hörnle, Schallstadt (~10 km south)",price:"Pay per kg",pv:5,dist:10,
+   cat:"farm",nrg:"low",
+   why:"Demeter-certified biodynamic farm 10km south. Organic, slower-grown, stronger flavour than commercial varieties. Self-picking from mid-May.",
+   src:"https://www.naturgut-hoernle-kg.de/",top:false,
+   det:"The Naturgut Hörnle is a Demeter-certified biodynamic farm in Schallstadt, on the Tuniberg slope south of Freiburg. Self-picking strawberries from mid to late May. Biodynamic growing means smaller fruit, stronger flavour, a field that does not look like a food factory. Easy by S-Bahn to Schallstadt, then a short walk."},
+
+  {id:24,
+   type:"experience",
+   tags:["seasonal","worth-driving"],
+   title:"Pick-Your-Own Strawberries — Buchholz, Waldkirch",
+   german:"Selbstpflücker-Erdbeerfeld Buchholz",
+   date:"2026-05-26",dd:"Any day this week",time:"Morning",
+   loc:"Franz-Xaver-Hof area, Waldkirch-Buchholz (~15 km northeast)",price:"Pay per kg",pv:5,dist:15,
+   cat:"farm",nrg:"low",
+   why:"A self-picking field in the hills above Waldkirch — a quiet valley town between Freiburg and the Black Forest. A good reason to drive the Elztal.",
+   src:"https://bz-ticket.de/selbstpfluecker-erdbeerfeld-buchholz-waldkirch",top:false,
+   det:"In Waldkirch-Buchholz, near the Franz-Xaver-Hof. Season opens in the second half of May. Waldkirch is a small town in the Elztal, 15km northeast — a nice reason to drive through a valley most visitors skip. The route up the Elz river is one of the better quiet drives in the region."},
+
+  {id:25,
+   type:"experience",
+   tags:["seasonal","locals-know"],
+   title:"White Asparagus Season — Weinhof Mößner, Tuniberg",
+   german:"Spargel direkt vom Weinhof",
+   date:"2026-05-26",dd:"Any day this week",time:"Farm shop hours",
+   loc:"Weinhof Mößner, Freiburg-Tiengen (Tuniberg, 8 km)",price:"Pay per kg",pv:8,dist:8,
+   cat:"farm",nrg:"low",
+   why:"A Tuniberg wine farm selling its own white asparagus directly from the field alongside estate wines. Late May is peak — the season ends June 24 by tradition.",
+   src:"https://www.weinhof-moessner.de/spargel.html",top:false,
+   det:"Weinhof Mößner sits on the Tuniberg, the smaller volcanic plateau west of Freiburg. They grow white asparagus in the sandier southern soils and sell directly from the farm shop alongside estate wines. Late May is peak asparagus season in Baden — the statutory end date is June 24 (Johannistag). Buy some wine at the same time."},
 
   /* ── NATURE + OUTDOOR ─────────────────────────────────────────────────── */
+  {id:26,
+   type:"experience",
+   tags:["seasonal","atmospheric"],
+   title:"Schauinsland Cable Car — Summit + Forest Trail",
+   german:"Schauinslandbahn, Horben",
+   date:"2026-05-26",dd:"Any day this week",time:"Daily from 09:00",
+   loc:"Schauinslandbahn valley station, Horben (12 km)",price:"€14.50 return",pv:15,dist:12,
+   cat:"outdoor",nrg:"medium",
+   why:"Freiburg's local mountain by one of Germany's longest cable cars — summit at 1,284m. In late May the high meadows are still in spring, weeks behind the valley.",
+   src:"https://www.schauinslandbahn.de/",top:false,
+   det:"The Schauinslandbahn runs from Horben (12km, reachable by bus from Freiburg) to the summit at 1,284m. Walk the ridge path or descend through old-growth forest via the Edelfrauengrab waterfall — a fern-heavy gorge with small swimming pools. In late May the summit meadows are still in early spring while Freiburg is fully in summer."},
+
+  {id:27,
+   type:"experience",
+   tags:["locals-know","atmospheric"],
+   title:"Staufen im Breisgau — The Town Where Faust Died",
+   german:"Altstadt Staufen, Markgräflerland",
+   date:"2026-05-26",dd:"Any day this week",time:"Self-guided",
+   loc:"Staufen im Breisgau (~22 km south, S-Bahn direct)",price:"Free",pv:0,dist:22,
+   cat:"village-life",nrg:"low",
+   why:"The market town where Doctor Faustus allegedly perished in 1539. A medieval square, a ruined castle above the vines, the original gasthaus still serving. Less visited than Breisach.",
+   src:"https://www.staufen.de/",top:false,
+   det:"Staufen is a market town south of Freiburg in the Markgräflerland. The medieval Gasthaus Löwen — where the Faust legend supposedly ends — still operates. Above the town: a ruined castle on a vineyard hill, 20 minutes on foot, with good views over the wine country. S-Bahn direct from Freiburg. Quieter than Breisach, fewer tour groups."},
+
+  {id:28,
+   type:"experience",
+   tags:["seasonal","atmospheric"],
+   title:"Münstertal Valley Cycle — Into the Black Forest",
+   german:"Radfahren im Münstertal",
+   date:"2026-05-26",dd:"Any day this week",time:"Self-guided",
+   loc:"Münstertal (~25 km south, start from Staufen)",price:"Free (+ bike or rental)",pv:0,dist:25,
+   cat:"outdoor",nrg:"medium",
+   why:"A narrow forested valley running from Staufen into the southern Black Forest. One road in, one out. A cycle path follows the stream most of the way. Late May: fully leafed, streams still high.",
+   src:"https://www.muenstertal-staufen.de/",top:false,
+   det:"The Münstertal is about 20km long, running southeast from Staufen through forested hills. A cycle path follows the Münster stream most of the way. Several farmhouses and inns are open without reservation. At the far end: St. Trudpert, a Benedictine monastery founded in the 7th century, open to visit. Return from the valley is downhill. Take the S-Bahn to Staufen, bring or rent a bike."},
+
+  {id:29,
+   type:"experience",
+   tags:["seasonal","atmospheric","locals-know"],
+   title:"Titisee — Go Before 10:00",
+   german:"Titisee am frühen Morgen",
+   date:"2026-05-26",dd:"Any day this week",time:"07:30–10:00 (early start)",
+   loc:"Titisee-Neustadt, Hochschwarzwald (~32 km from Freiburg)",price:"Free",pv:0,dist:32,
+   cat:"nature",nrg:"low",
+   why:"The most visited lake in the Black Forest is completely different at 08:00 — no tour buses, mist still on the water, the forest path to yourself. Train takes 45 minutes.",
+   src:"https://www.hochschwarzwald.de/",top:false,
+   det:"Titisee is famous and crowded — from about 10:00. The first train from Freiburg Hbf arrives at Titisee at 08:03. At that hour: cold, still, nobody selling cuckoo clocks yet. Walk the 6km circuit on the forest path away from the souvenir strip. Leave before 10:30 and the contrast with the afternoon crowds is genuinely striking."},
+
+  {id:30,
+   type:"experience",
+   tags:["seasonal","worth-driving"],
+   title:"Schluchsee — Germany's Black Forest Reservoir",
+   german:"Schluchsee, größter See im Schwarzwald",
+   date:"2026-05-26",dd:"Any day this week",time:"Self-guided",
+   loc:"Schluchsee, Hochschwarzwald (~50 km from Freiburg)",price:"Free",pv:0,dist:50,
+   cat:"nature",nrg:"medium",
+   why:"The largest lake in the Black Forest — deeper and colder than Titisee, far fewer tourists. A long shoreline trail. Reachable by train from Freiburg.",
+   src:"https://www.hochschwarzwald.de/erleben/premium-wandern/wanderungen-und-touren-rund-um-den-schluchsee",top:false,
+   det:"Schluchsee is 50 minutes from Freiburg by train (change at Titisee). A hydroelectric reservoir — deeper, colder, longer shoreline than Titisee. The trail around it takes a full day. Designated swimming areas. Boat hire at the village. Mostly German visitors, no souvenir market. Temperatures 3–5°C cooler than in Freiburg."},
+
+  {id:31,
+   type:"experience",
+   tags:["seasonal","worth-driving","atmospheric"],
+   title:"Feldberg Plateau Walk — South Germany's Highest Summit",
+   german:"Feldberg Wanderung",
+   date:"2026-05-26",dd:"Any day this week",time:"Self-guided",
+   loc:"Feldberg summit, Hochschwarzwald (~40 km from Freiburg)",price:"Free",pv:0,dist:40,
+   cat:"outdoor",nrg:"high",
+   why:"At 1,493m, Germany's highest peak south of the Alps. In late May: ski lifts silent, snow patches melting, alpine flowers just starting. The summit is empty.",
+   src:"https://www.hochschwarzwald.de/erleben/premium-wandern/",top:false,
+   det:"Feldberg is the highest point in the Black Forest at 1,493m. In late May the snow has mostly cleared but alpine plants are in early bloom — gentians, alpine roses, ranunculus. No ski crowds. Views to the Alps, the Vosges, the Rhine plain on clear days. Bus 7300 from Freiburg Hbf, about 70 minutes. Well-marked paths from the bus stop. Not a technical hike."},
 
   /* ── VILLAGE + REGIONAL CULTURE ───────────────────────────────────────── */
+  {id:32,
+   type:"experience",
+   tags:["locals-know","atmospheric"],
+   title:"Breisach — Cathedral on the Rhine",
+   german:"Breisach am Rhein, St. Stephan Münster",
+   date:"2026-05-26",dd:"Any day this week",time:"Self-guided",
+   loc:"Breisach am Rhein (~25 km from Freiburg)",price:"Free",pv:0,dist:25,
+   cat:"village-life",nrg:"low",
+   why:"A medieval cathedral perched on a volcanic plug above the Rhine — panorama over Alsace and the Vosges. Rarely mentioned alongside the more famous Black Forest sites.",
+   src:"https://www.tourismus.breisach.de/",top:false,
+   det:"Breisach sits on a lava plug rising above the Rhine plain. The St. Stephan Münster on top is a genuine medieval cathedral with remarkable altar paintings by Master H.L. From the terrace: direct views across to Neuf-Brisach (Vauban's star fortress) and the Vosges. The Saturday guided tour (€8 with tasting) is the best way to understand the town's long border history."},
+
+  {id:33,
+   type:"experience",
+   tags:["locals-know","niche-community"],
+   title:"Badischer Winzerkeller — Inside One of Europe's Biggest Wine Cellars",
+   german:"Kellerei Breisach, Führungen",
+   date:"2026-05-26",dd:"Any day this week",time:"Book ahead",
+   loc:"Badischer Winzerkeller, Breisach am Rhein",price:"~€15 (check website)",pv:15,dist:25,
+   cat:"food-wine",nrg:"low",
+   why:"One of the largest wine cooperatives in Europe — carved cellars under the Breisach volcanic rock, processing 6,000 hectares of Baden vineyards. A working operation, not a boutique.",
+   src:"https://www.badischer-winzerkeller.de/",top:false,
+   det:"The Badischer Winzerkeller handles around 6,000 hectares of Baden vineyards — one of the largest wine operations in Germany. Their cellars run under the Münsterberg, including an enormous historic barrel hall. Tours show the difference between a genuine regional producer and boutique estates. The tasting covers Spätburgunder, Grauburgunder, and Weißburgunder expressions from across the cooperative."},
+
+  {id:34,
+   type:"experience",
+   tags:["worth-driving","atmospheric","seasonal"],
+   title:"Colmar Day Trip — The Alsace Town, 55 km",
+   german:"Colmar, Elsass",
+   date:"2026-05-26",dd:"Any day this week",time:"By train (change Breisach or Mulhouse)",
+   loc:"Colmar, Alsace, France (~55 km from Freiburg)",price:"Train ~€15 return",pv:15,dist:55,
+   cat:"village-life",nrg:"medium",
+   why:"The most intact Alsatian old town in France — timber-framed houses, canals, Saturday market. Late May before peak summer: restaurants not yet packed, markets still local.",
+   src:"https://www.tourisme-colmar.com/",top:false,
+   det:"Colmar is 55km from Freiburg — by train via Breisach and the French network (about 1h20), or by car across the Rhine. The Altstadt is genuinely intact: the Petite Venise canal district, the Pfister House, the market halls. The Unterlinden Museum houses the Isenheim Altarpiece. Go on a Saturday for the market. Lunch in a winstub — Alsatian wine restaurant. Back by early evening."},
+
+  {id:35,
+   type:"experience",
+   tags:["seasonal","atmospheric","worth-driving"],
+   title:"Kaiserstuhl Vineyard Bike Circuit",
+   german:"Kaiserstuhl Radwanderweg",
+   date:"2026-05-26",dd:"Any day this week",time:"Self-guided, full day",
+   loc:"Kaiserstuhl (start: Breisach or Endingen, ~22–25 km)",price:"Free (+ bike rental if needed)",pv:0,dist:22,
+   cat:"outdoor",nrg:"medium",
+   why:"A circular bike route around the Kaiserstuhl volcanic plateau through vine-terraced villages. Late May: vines fully leafed, orchids on terraced paths, Weinstuben open from midday.",
+   src:"https://www.kaiserstuhl.de/aktiv/radfahren/",top:false,
+   det:"The Kaiserstuhl is a 16km-wide volcanic cone between Freiburg and the Vosges. The circuit passes through Breisach, Bischoffingen, Endingen, Burkheim, and Achkarren — each a small wine village with at least one Weinstube open daily. Full circuit about 40km and mostly flat. Wild orchids on terraced vineyard paths in late May. S-Bahn to Breisach, rent bikes there or bring your own."},
+
+  {id:36,
+   type:"experience",
+   tags:["atmospheric","seasonal","locals-know"],
+   title:"Hinterzarten — A Black Forest Village That Stayed Quiet",
+   german:"Hinterzarten, Hochschwarzwald",
+   date:"2026-05-26",dd:"Any day this week",time:"Self-guided",
+   loc:"Hinterzarten, Hochschwarzwald (~25 km from Freiburg)",price:"Free",pv:0,dist:25,
+   cat:"village-life",nrg:"low",
+   why:"A genuine Black Forest village on the plateau at 900m — broad farmhouses with extended roofs, open meadows, old-growth forest. None of Titisee's souvenir density.",
+   src:"https://www.gemeinde-hinterzarten.de/",top:false,
+   det:"Hinterzarten is 35 minutes by train from Freiburg. It has none of the tourist infrastructure of Titisee and more accurately represents how Black Forest villages actually look — traditional farmhouses, extended roofs, open hay meadows. In late May meadow flowers are still out. The Adler Hotel (a 16th-century inn still operating) and the church are walkable from the station. A place to walk and eat, not to sightsee."},
 
   /* ── FREIBURG: LOCAL PLACES ───────────────────────────────────────────── */
+  {id:37,
+   type:"experience",
+   tags:["locals-know","seasonal"],
+   title:"Museum Natur und Mensch — Natural History in a City Villa",
+   german:null,
+   date:"2026-05-26",dd:"Any day this week",time:"Tue–Sun 10:00–17:00",
+   loc:"Gerberau 32, Freiburg (by the Dreisam)",price:"€5 / reduced €3",pv:5,dist:0.5,
+   cat:"culture",nrg:"low",
+   why:"Natural history museum in a 19th-century villa by the Dreisam — regional geology, Bronze Age finds, ethnology, an excellent fossil collection. Rarely crowded.",
+   src:"https://www.museum-natur-mensch.de/",top:false,
+   det:"The Museum Natur und Mensch sits in a historic villa on the Gerberau, close to the river. Collections cover regional geology (Kaiserstuhl and Schwarzwald volcanic systems), Stone Age and Bronze Age finds from the Upper Rhine region, and an ethnological collection. The fossil and mineral rooms are particularly strong. A slow two-hour morning museum, especially useful when the weather turns."},
+
+  {id:38,
+   type:"experience",
+   tags:["locals-know","seasonal"],
+   title:"Mundenhof — Free Wildlife Park on the Rhine",
+   german:"Tier- und Pflanzenpark Mundenhof",
+   date:"2026-05-26",dd:"Any day this week",time:"Daily 07:00 to dusk",
+   loc:"Am Mundenhof 37, Freiburg-Opfingen (~8 km)",price:"Free",pv:0,dist:8,
+   cat:"nature",nrg:"low",
+   why:"Freiburg's free city wildlife park — 40 hectares on the Rhine plain with European species from red deer to bison. Almost entirely unknown to tourists.",
+   src:"https://www.freiburg.de/mundenhof",top:false,
+   det:"The Mundenhof is a city-run wildlife and plant park 8km from the centre near the Rhine at Opfingen. Free to enter, not in guidebooks — Freiburg residents use it as a walking park with the bonus of animals. European species: red deer, fallow deer, European bison, wild boar, waterfowl. 40 hectares of open parkland. Café on site. Reachable by bike via the Rhine cycle path."},
+
+  {id:39,
+   type:"experience",
+   tags:["locals-know","atmospheric"],
+   title:"Schlossberg — Freiburg's Own Hill",
+   german:"Schlossberg Freiburg",
+   date:"2026-05-26",dd:"Any day this week",time:"Always open",
+   loc:"Schlossberg, directly above the Altstadt",price:"Free (cable car ~€3 optional)",pv:0,dist:0.2,
+   cat:"outdoor",nrg:"low",
+   why:"The forested hill directly above the Altstadt — Baroque fortress ruins, views of the Münster and Kaiserstuhl. No entrance fee. Locals walk here at all hours.",
+   src:"https://www.freiburg.de/pb/231011.html",top:false,
+   det:"The Schlossberg rises directly from the eastern edge of the Altstadt. The Baroque fortress was demolished on Napoleon's orders in 1744 — earthworks and ruins remain. From the tower at the top: the whole Freiburg basin, the Münster, the Kaiserstuhl, and on clear days the Alps. The Greiffenegg-Schlössle restaurant terrace opens from midday. Worth going at dusk."},
 
   /* ── COMING SOON ──────────────────────────────────────────────────────── */
   {id:40,
@@ -644,6 +925,54 @@ const EV=[
    src:"https://www.vogtsburg.de/",top:false,
    det:"Burkheim sits on the western Kaiserstuhl rim, overlooking the Rhine. The old town survived the 17th-century wars intact — a compact street of half-timbered winemakers’ houses, a Johanniterkirche from the 13th century, and the remains of a medieval castle on the vine terrace above. One Weinstube opens at midday. Reachable by S-Bahn to Breisach, then cycle 8km or take a bus. Tourists end up at Achkarren or Ihringen; Burkheim stays quiet."},
 
+  {id:45,
+   type:"experience",
+   tags:["seasonal","atmospheric","worth-driving"],
+   title:"Kaiserstuhl Orchid Walk — Late May Peak",
+   german:"Orchideenpfad Kaiserstuhl",
+   date:"2026-05-26",dd:"Any day this week (late May is peak)",time:"Self-guided, mornings best",
+   loc:"Badberg / Achkarren, Kaiserstuhl (~25 km)",price:"Free",pv:0,dist:25,
+   cat:"nature",nrg:"medium",
+   why:"Late May is peak orchid season on the Kaiserstuhl — up to 20 species on the warm dry-stone terraces between Achkarren and Oberrotweil. Nothing else in this region produces this density.",
+   src:"https://www.kaiserstuhl.de/natur/flora-fauna/orchideen/",top:false,
+   det:"The Kaiserstuhl has the warmest and driest microclimate in Germany — volcanic basalt soil supporting Mediterranean orchid species. The Badberg nature reserve and the terraced paths between Achkarren and Oberrotweil hold the highest concentrations: early purple, lizard, bee, and fly orchids in late May. Follow the signed Orchideenpfad from Achkarren. S-Bahn to Breisach, bike or bus in. The season ends by mid-June."},
+
+  {id:46,
+   type:"experience",
+   tags:["worth-driving","atmospheric"],
+   title:"Riquewihr, Alsace — The Walled Wine Village",
+   german:"Riquewihr, Haut-Rhin",
+   date:"2026-05-26",dd:"Any day this week — go before 10:30 or after 17:00",time:"Self-guided",
+   loc:"Riquewihr, Alsace, France (~65 km from Freiburg)",price:"Free (+ car or bus)",pv:0,dist:65,
+   cat:"village-life",nrg:"low",
+   why:"A walled Alsatian village that has not expanded beyond its medieval gates in 400 years — one long street of 16th-century houses, two towers, Riesling vineyards on all sides. More condensed and intact than Colmar.",
+   src:"https://www.ribeauville-riquewihr.com/",top:false,
+   det:"Riquewihr is encircled by its original 16th-century walls. A single main street with Renaissance burgher houses, each with a winery behind it. Riesling and Gewürztraminer country. By car: 65km via the Rhine bridge at Breisach, then the Route des Vins. Go in the morning before coach tours or late afternoon when it empties. Riboàville is 5km north and even less visited. The wine route path between the two villages (5km) is walkable."},
+
+  {id:47,
+   type:"experience",
+   tags:["seasonal","worth-driving"],
+   title:"Todtnauer Wasserfall — 97m Through Dark Forest",
+   german:"Todtnauer Wasserfall, Südlicher Schwarzwald",
+   date:"2026-05-26",dd:"Any day this week",time:"Self-guided",
+   loc:"Todtnau, südlicher Schwarzwald (~35 km from Freiburg)",price:"Free",pv:0,dist:35,
+   cat:"outdoor",nrg:"medium",
+   why:"One of the highest single-drop waterfalls in Baden-Württemberg — 97m through a narrow forest gorge. Late May snowmelt feeds the maximum volume of the year. 30-minute walk from the village.",
+   src:"https://www.todtnau.de/touristik/sehenswertes/wasserfall.html",top:false,
+   det:"The Todtnauer Wasserfall falls 97m in a narrow gorge above Todtnau village — signed path from the Ortsmitte, 30 minutes on foot with some climbing. In late May the snowmelt from the Feldberg plateau feeds the greatest water volume of the year. Combine with Todtnauberg (the hamlet where Heidegger wrote Being and Time — his hut is still there, 4km uphill). Drive via the Wiesental, or take a bus from Schopfheim (change from Freiburg S-Bahn)."},
+
+  {id:48,
+   type:"experience",
+   tags:["worth-driving","seasonal"],
+   title:"Triberg Waterfalls — Germany’s Highest",
+   german:"Triberger Wasserfälle",
+   date:"2026-05-26",dd:"Any day this week",time:"Daily from 09:00",
+   loc:"Triberg im Schwarzwald (~62 km from Freiburg)",price:"€6 / reduced €3",pv:6,dist:62,
+   cat:"nature",nrg:"medium",
+   why:"Seven cascades dropping 163m through beech forest — the highest waterfalls in Germany. Late May snowmelt means the maximum water of the year. The scenic Schwarzwaldbahn train takes 75 minutes.",
+   src:"https://www.triberg.de/tourismus/triberger-wasserfaelle",top:false,
+   det:"The Triberger Wasserfälle fall in seven stages over 163m through the Gutachtal gorge. Late May, with snowmelt still running, is when the volume peaks. The path takes 40-60 minutes and is well-maintained. Ignore the cuckoo clock shops in the town. Train from Freiburg Hbf on the Schwarzwaldbahn — a scenic mountain route through the central Black Forest, takes about 75 minutes."},
+
   {id:49,
    type:"event",
    tags:["worth-driving","seasonal","atmospheric"],
@@ -655,79 +984,70 @@ const EV=[
    why:"The weekly market on the medieval Marktplatz of one of the Kaiserstuhl’s main wine towns — asparagus and strawberries from surrounding farms, estate wine, local bread. More honest than city markets.",
    src:"https://www.endingen.de/",top:false,
    det:"Endingen sits on the northern Kaiserstuhl. The Saturday market uses the historic three-sided Marktplatz with the Kornhaus granary. Produce vendors sell asparagus and strawberries in season, local bakers, estate wine. Smaller and more local than Freiburg’s city markets. S-Bahn from Freiburg to Gottenheim (about 20 min), then bike 7km. Or drive directly."},
-  {id:51,
-   type:"event",
-   tags:["worth-driving","seasonal","food-wine"],
-   title:"Ihringer Weintage — 48th Wine & Village Festival",
-   german:"48. Ihringer Weintage — Wein- und Gassenfest",
-   date:"2026-06-05",dd:"Fri 5 Jun",time:"18:00",
-   loc:"Ortsmitte Bachenstraße, Ihringen am Kaiserstuhl (~20 km)",price:"Free",pv:0,dist:20,
-   cat:"food-wine",nrg:"medium",
-   why:"Four days of Kaiserstuhl wine, local food and live music in the courtyards and alleys of Ihringen village. Friday opens with the mayor tapping the festival wine. Easier to get to by train than you'd think.",
-   src:"https://www.ihringer-weintage.de/",top:false,
-   det:"The 48th edition of Ihringen's Wein- und Gassenfest runs Fri–Mon 5–8 June. Saturday has a Bavarian breakfast with live music from 10:00 and the Winzerolympiade vintner competition at 14:30. Ihringen train station sits right next to the festival area — S-Bahn from Freiburg Hbf takes about 25 min. Local wine cooperatives and restaurants serve Kaiserstuhl Spätburgunder, Weißburgunder and regional food."},
 
-  {id:52,
-   type:"event",
-   tags:["locals-know","free","outdoor"],
-   title:"Güterbahnhof Flea Market",
-   german:"Güterbahnhof Flohmarkt",
-   date:"2026-06-06",dd:"Sat 6 Jun",time:"09:00–15:00",
-   loc:"Güterbahnhof, Freiburg",price:"Free",pv:0,dist:1,
-   cat:"flea-market",nrg:"low",
-   why:"The Bährle-run flea market at the Güterbahnhof — one of Freiburg's most consistent weekend markets. Relaxed atmosphere, mix of vintage finds and household clear-outs.",
-   src:"https://wiehre.uber.space/gueterbahnhof-flohmarkt-saison-termine-2023/",top:false,
-   det:"Open from 09:00 to 15:00 at the Güterbahnhof. Organised by the same crew behind the Wiehre Flohmarkt. Second date this month is 13 June. Free entry for visitors. Sellers register in advance."},
+  {id:50,
+   type:"experience",
+   tags:["worth-driving","seasonal","atmospheric"],
+   title:"Staufen–Münstertal Wine Road Walk",
+   german:"Weinstraße Staufen–Ballrechten",
+   date:"2026-05-26",dd:"Any day this week",time:"Self-guided, half-day",
+   loc:"Staufen im Breisgau to Ballrechten (~22 km south)",price:"Free (+ S-Bahn ~€3.50)",pv:4,dist:22,
+   cat:"outdoor",nrg:"medium",
+   why:"A vineyard ridge walk south of Freiburg through Markgräflerland Pinot Blanc and Gutedel vines — arriving at small wine villages where you can stop at a farm stall or Weinstube on the way back down.",
+   src:"https://www.markgraeflerland.eu/erleben/wandern/",top:false,
+   det:"Take the S-Bahn south to Staufen. From the market square, paths climb through Markgräflerland vineyards on the gentle plateau slopes toward Ballrechten and Dottingen. The Gutedel grape — grown almost nowhere else in Germany — is the regional speciality; farm stalls sell estate wine directly. A half-day return walk; mostly flat to moderate. In late May the vine rows are bright green and the paths between them are open."}
 
-  {id:53,
-   type:"event",
-   tags:["music","outdoor","seasonal"],
-   title:"Münsterplatz Konzerte — Sabaton",
-   german:"Münsterplatz Konzerte 2026: Sabaton",
-   date:"2026-06-10",dd:"Wed 10 Jun",time:"19:00",
-   loc:"Münsterplatz, Freiburg",price:"From €70",pv:70,dist:0,
-   cat:"music",nrg:"high",
-   why:"Swedish heavy metal band Sabaton plays the Münsterplatz open-air stage with around 6,000 capacity. One of the more surprising bookings in this year's series — an actual metal show in front of the cathedral.",
-   src:"https://muensterplatzkonzerte-freiburg.de/programm/",top:false,
-   det:"Part of the Münsterplatz Konzerte series running 9–14 June 2026. The open-air stage is set up directly on the Münsterplatz with the Freiburg Minster as backdrop. Around 5,000 tickets sold of 6,400 capacity as of May. Doors typically open 1.5h before start."},
-
-  {id:54,
-   type:"event",
-   tags:["music","outdoor","seasonal"],
-   title:"Münsterplatz Konzerte — Clueso",
-   german:"Münsterplatz Konzerte 2026: Clueso",
-   date:"2026-06-11",dd:"Thu 11 Jun",time:"19:00",
-   loc:"Münsterplatz, Freiburg",price:"From €75",pv:75,dist:0,
-   cat:"music",nrg:"medium",
-   why:"German singer-songwriter Clueso performing live on the Münsterplatz stage — one of the bigger draws in this year's series. Warm summer evening, cathedral backdrop.",
-   src:"https://muensterplatzkonzerte-freiburg.de/programm/",top:false,
-   det:"Clueso is one of the headline acts of the Münsterplatz Konzerte 2026 series. Tickets from €74.95. The Münsterplatz stage holds around 6,400 people. Part of a six-night run 9–14 June at the same venue."},
-
-  {id:55,
-   type:"event",
-   tags:["worth-driving","seasonal","food-wine","free"],
-   title:"Wein & Musik Staufen — Wine & Live Music Festival",
-   german:"Wein & Musik Staufen im Breisgau",
-   date:"2026-06-12",dd:"Fri 12 Jun",time:"18:00",
-   loc:"Marktplatz & Kronenplatz, Staufen im Breisgau (~20 km)",price:"Free",pv:0,dist:20,
-   cat:"food-wine",nrg:"medium",
-   why:"Free three-day wine street festival in the medieval town of Staufen, with stages on the Marktplatz, Kronenplatz and Weinbrunnen. Local winemakers pour, bands play everything from jazz to rock to brass. Genuinely nice town to wander.",
-   src:"https://www.gewerbeverein-staufen.de/veranstaltungen.php?id=3982",top:false,
-   det:"Wein & Musik runs Fri–Sun 12–14 June 2026. Multiple stages with live bands from the region and beyond — genres span brass, blues, oldies, rock, funk, soul, salsa and jazz. Staufen's winemakers and restaurants serve food and wine throughout. Free entry. Staufen is reachable by S-Bahn from Freiburg in about 20 min."},
-
-  {id:56,
-   type:"event",
-   tags:["locals-know","free","outdoor"],
-   title:"Güterbahnhof Flea Market",
-   german:"Güterbahnhof Flohmarkt",
-   date:"2026-06-13",dd:"Sat 13 Jun",time:"09:00–15:00",
-   loc:"Güterbahnhof, Freiburg",price:"Free",pv:0,dist:1,
-   cat:"flea-market",nrg:"low",
-   why:"Second Bährle Güterbahnhof market of the month. Same reliable setup as the 6 June edition.",
-   src:"https://wiehre.uber.space/gueterbahnhof-flohmarkt-saison-termine-2023/",top:false,
-   det:"Open 09:00–15:00 at the Güterbahnhof. This is the reserve/second date in June. Free entry for visitors."},
 ];
+
+const CATLBLS={
+  "flea-market":"Flea market",
+  "music":"Music",
+  "cinema":"Cinema",
+  "culture":"Culture",
+  "making":"Making & craft",
+  "workshop":"Workshop",
+  "nature":"Nature & outdoor",
+  "outdoor":"Outdoor",
+  "farm":"Farm & food",
+  "food-wine":"Food & wine",
+  "village-life":"Village life",
+  "local-oddity":"Local oddity",
+  "weird-local-worlds":"Local oddity",
+  "movement":"Movement",
+  "repair":"Community repair",
+};
+
+/* ── energy icons (SVG outline, no emoji) ── */
+/* lightning bolts — 1/2/3 for low/medium/high — outline, no fill */
+const BOLT=`<svg class="bolt-svg" width="7" height="11" viewBox="0 0 7 11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 1L2.2 5.8H5.5L1.5 10"/></svg>`;
+const NRG_DOTS={
+  low:   BOLT,
+  medium:BOLT+BOLT,
+  high:  BOLT+BOLT+BOLT
+};
+
+/* flat muted palette — dusty, mineral, architectural, warm */
+const CAT_COLOR={
+  "flea-market":   "#C4A850",   /* warm dusty gold          */
+  "music":         "#A86860",   /* dusty terracotta-rose     */
+  "cinema":        "#A49080",   /* warm stone / sand         */
+  "culture":       "#828C6E",   /* muted olive-sage          */
+  "weird-local-worlds":"#8A84A2",/* desaturated stone-lavender*/
+  "making":        "#A08860",   /* warm amber-tan            */
+  "workshop":      "#9A8462",   /* warm tan                  */
+  "farm":          "#84906C",   /* sage-green                */
+  "nature":        "#76886A",   /* forest grey-green         */
+  "movement":      "#7E8E78",   /* muted grey-sage           */
+  "village-life":  "#A49260",   /* sandy warm stone          */
+  "local-oddity":  "#8A84A2",   /* desaturated stone-lavender*/
+  "outdoor":       "#7A8E6C",   /* muted forest-sage         */
+  "food-wine":     "#9A6868",   /* muted wine-rose           */
+  "repair":        "#8A9480",   /* cool grey-sage            */
+};
+const CAT_GRAD=CAT_COLOR;
+
 const MOODS={
+  cozy:{energy:["low"],category:[]},
   outside:{energy:["medium","high"],category:[]},
   creative:{energy:[],category:["culture","local-oddity","weird-local-worlds","making","workshop"]},
   active:{energy:["high"],category:[]},
@@ -748,8 +1068,6 @@ const HERO_IMG='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBAUEB
       requestAnimationFrame(function(){
         const bg=document.getElementById('hero-bg');
         if(bg) bg.style.transform='translateY('+(window.scrollY*0.35)+'px)';
-        const heroL=document.querySelector('.hdr-l');
-        if(heroL){const f=Math.max(0,1-Math.max(0,window.scrollY-60)/200);heroL.style.opacity=f;}
         _scrollTick=false;
       });
     }
@@ -782,8 +1100,7 @@ function syncDarkSwitch(on){
   }catch(e){}
 })();
 
-let S={mood:null,time:"7days",price:"any",dist:30,energy:[],category:[],saved:[],hidden:new Set(),open:new Set(),surpriseHist:[]}
-try{const _sv=localStorage.getItem('wtd-saved');if(_sv){const _p=JSON.parse(_sv);if(Array.isArray(_p))S.saved=_p;}}catch(e){};
+let S={mood:null,time:"7days",price:"any",dist:60,energy:[],category:[],saved:[],hidden:new Set(),open:new Set(),surpriseHist:[]};
 let _modal=null,_scrollY=0;
 
 function inTime(e){
@@ -812,8 +1129,7 @@ function matchTop(e){
 
 function cardImgHtml(e){
   const col=CAT_COLOR[e.cat]||"#A09888";
-  const _nrgLbl={low:'Low energy',medium:'Medium energy',high:'High energy'};
-  const nrg=`<span class="card-nrg-inner" title="${_nrgLbl[e.nrg]||''}">${NRG_DOTS[e.nrg]}</span>`;
+  const nrg=`<span class="card-nrg-inner">${NRG_DOTS[e.nrg]}</span>`;
   const cat=`<span class="strip-cat-text">${CATLBLS[e.cat]||e.cat}</span>`;
   return`<div class="card-img" style="background-color:${col}">${nrg}${cat}</div>`;
 }
@@ -833,9 +1149,9 @@ ${imgHtml}
 ${isOpen?'':`<div class="cexpand-hint">· · ·</div>`}
 ${isOpen?`<div class="cdetails">${e.german?`<span style="display:block;font-size:11px;font-style:italic;color:var(--text2);margin-bottom:7px;opacity:0.75">${e.german}</span>`:""  }${e.det}</div>`:'<div class="cdetails hidden"></div>'}
 <div class="cactions">
-  <button type="button" class="act${isSaved?' saved':''}" onclick="toggleSave(${e.id},event)" title="${isSaved?'Saved in this browser':'Save to this browser'}">${isSaved?'♥ Saved':'♡ Save'}</button>
-  ${mode!=='top'?`<button type="button" class="act act-hide" onclick="hideEv(${e.id},event)">Skip</button>`:''}
-  <a class="act-src" href="${e.src}" target="_blank" onclick="event.stopPropagation()">↗ Website</a>
+  <button type="button" class="act${isSaved?' saved':''}" onclick="toggleSave(${e.id},event)">${isSaved?'♥ Saved':'♡ Save'}</button>
+  ${mode!=='top'?`<button type="button" class="act act-hide" onclick="hideEv(${e.id},event)">✕ Hide</button>`:''}
+  <a class="act-src" href="${e.src}" target="_blank" onclick="event.stopPropagation()">↗ Source</a>
 </div>
 </div>`;
 }
@@ -859,30 +1175,22 @@ ${e.german?`<div class="modal-german">${e.german}</div>`:''}
 <div class="modal-why">${e.why}</div>
 <div class="modal-actions">
   <button type="button" class="modal-act${isSaved?' saved':''}" onclick="toggleSaveModal(${e.id},this)">${isSaved?'♥ Saved':'♡ Save'}</button>
-  <a class="modal-act-src" href="${e.src}" target="_blank">↗ Website</a>
-  <button type="button" class="modal-act-again" onclick="doSurprise()">🎲 Try another</button>
+  <a class="modal-act-src" href="${e.src}" target="_blank">↗ Source</a>
+  <button type="button" class="modal-act-again" onclick="doSurprise()">🎲 Another</button>
 </div>
 </div>`;
 }
 
 function emptyStateHtml(){
   const s=[];
-  if(S.mood) s.push('<button type="button" onclick="clearMood()">Clear mood</button>');
-  if(S.time==="today"||S.time==="weekend") s.push('<button type="button" onclick="broadenTime()">Show this week</button>');
-  if(S.energy.length) s.push('<button type="button" onclick="clearGroup(\'energy\')">Clear energy</button>');
-  if(S.category.length) s.push('<button type="button" onclick="clearGroup(\'category\')">Clear category</button>');
-  s.push('<button type="button" class="clr" onclick="clearAll()">Clear all</button>');
+  if(S.mood) s.push('<button type="button" onclick="clearMood()">Remove mood filter</button>');
+  if(S.time==="today"||S.time==="weekend") s.push('<button type="button" onclick="broadenTime()">📅 Broaden to 7 days</button>');
+  if(S.energy.length) s.push('<button type="button" onclick="clearGroup(\'energy\')">Remove energy filter</button>');
+  if(S.category.length) s.push('<button type="button" onclick="clearGroup(\'category\')">Remove category filter</button>');
+  s.push('<button type="button" class="clr" onclick="clearAll()">✕ Clear all</button>');
   return`<div class="empty-state"><p>Nothing here for these filters.</p><div class="empty-suggestions">${s.join("")}</div></div>`;
 }
 
-function animRender(){
-  const els=[document.getElementById("tp-row"),document.getElementById("disc-grid")];
-  els.forEach(el=>{if(el){el.style.opacity="0";}});
-  setTimeout(()=>{
-    render();
-    requestAnimationFrame(()=>{els.forEach(el=>{if(el)el.style.opacity="1";});});
-  },100);
-}
 function render(){
   const topEvs=EV.filter(e=>e.top&&!S.hidden.has(e.id)&&matchTop(e));
   document.getElementById("tp-row").innerHTML=topEvs.map((e,i)=>cardHtml(e,"top",i)).join("");
@@ -894,7 +1202,7 @@ function render(){
   const _M=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],_n=new Date(),_t2=new Date(_n.getFullYear(),_n.getMonth(),_n.getDate()),_w=new Date(_t2.getTime()+6*864e5),_fd=d=>`${d.getDate()} ${_M[d.getMonth()]}`;  const lbl=`${_fd(_t2)} – ${_fd(_w)} · ${allVis.length} event${allVis.length!==1?'s':''}`;
   document.getElementById("ecount-label").textContent=lbl;
   const hCnt=S.hidden.size;
-  document.getElementById("hidden-bar-wrap").innerHTML=hCnt?`<div class="hidden-bar">${hCnt} event${hCnt>1?'s':''} hidden — <button type="button" onclick="unhideAll()">Restore hidden</button></div>`:'';
+  document.getElementById("hidden-bar-wrap").innerHTML=hCnt?`<div class="hidden-bar">${hCnt} event${hCnt>1?'s':''} hidden — <button type="button" onclick="unhideAll()">show all</button></div>`:'';
   const hasF=S.mood||S.energy.length||S.category.length||S.time!=="7days"||S.price!=="any"||S.dist!==30;
   document.getElementById("clrbtn").style.display=hasF?"inline-block":"none";
   const savedEvs=EV.filter(e=>S.saved.includes(e.id));
@@ -927,21 +1235,15 @@ function doSurprise(){
 }
 function closeModal(){
   if(!_modal) return;
-  _modal.style.animation="modalIn 0.16s ease-out reverse both";
-  const _box=_modal.querySelector(".modal-box");
-  if(_box) _box.style.animation="modalBoxIn 0.16s cubic-bezier(0.16,1,0.3,1) reverse both";
-  setTimeout(()=>{
-    if(_modal){_modal.remove();_modal=null;}
-    document.body.style.overflow="";
-    window.scrollTo(0,_scrollY);
-  },150);
+  _modal.remove();_modal=null;
+  document.body.style.overflow='';
+  window.scrollTo(0,_scrollY);
 }
 function toggleSaveModal(id,btn){
   const i=S.saved.indexOf(id);
   if(i>-1){S.saved.splice(i,1);btn.className='modal-act';btn.textContent='♡ Save';}
   else{S.saved.push(id);btn.className='modal-act saved';btn.textContent='♥ Saved';}
   render();
-  try{localStorage.setItem('wtd-saved',JSON.stringify(S.saved));}catch(e){}
 }
 document.addEventListener('keydown',(ev)=>{if(ev.key==='Escape') closeModal();});
 
@@ -959,7 +1261,7 @@ function setMood(btn,mood){
     S.energy.forEach(v=>{const b=document.querySelector(`[data-t="energy"][data-v="${v}"]`);if(b)b.classList.add(v==="low"?"on-low":v==="medium"?"on-med":"on-high");});
     S.category.forEach(v=>{const b=document.querySelector(`[data-t="category"][data-v="${v}"]`);if(b)b.classList.add("on");});
   }
-  animRender();
+  render();
 }
 function clearMood(){
   S.mood=null;
@@ -976,19 +1278,19 @@ function toggleMoreFilters(btn){
   const sec=document.getElementById("more-filters");
   const open=sec.classList.toggle("open");
   btn.classList.toggle("open",open);
-  btn.textContent=open?"Refine ▴":"Refine ▾";
+  btn.textContent=open?"Filters ▴":"More filters ▾";
 }
 function setTime(btn,v){
   S.mood=null;document.querySelectorAll(".mood-pill").forEach(b=>b.classList.remove("on"));
-  S.time=v;document.querySelectorAll('[data-g="time"]').forEach(b=>{b.classList.remove("on");b.setAttribute('aria-pressed','false')});btn.classList.add("on");btn.setAttribute('aria-pressed','true');animRender();
+  S.time=v;document.querySelectorAll('[data-g="time"]').forEach(b=>{b.classList.remove("on");b.setAttribute('aria-pressed','false')});btn.classList.add("on");btn.setAttribute('aria-pressed','true');render();
 }
 function setPrice(btn,v){
   S.mood=null;document.querySelectorAll(".mood-pill").forEach(b=>b.classList.remove("on"));
-  S.price=v;document.querySelectorAll('[data-g="price"]').forEach(b=>{b.classList.remove("on");b.setAttribute('aria-pressed','false')});btn.classList.add("on");btn.setAttribute('aria-pressed','true');animRender();
+  S.price=v;document.querySelectorAll('[data-g="price"]').forEach(b=>{b.classList.remove("on");b.setAttribute('aria-pressed','false')});btn.classList.add("on");btn.setAttribute('aria-pressed','true');render();
 }
 function setDist(btn,v){
   S.mood=null;document.querySelectorAll(".mood-pill").forEach(b=>b.classList.remove("on"));
-  S.dist=v;document.querySelectorAll('[data-g="dist"]').forEach(b=>{b.classList.remove("on");b.setAttribute('aria-pressed','false')});btn.classList.add("on");btn.setAttribute('aria-pressed','true');animRender();
+  S.dist=v;document.querySelectorAll('[data-g="dist"]').forEach(b=>{b.classList.remove("on");b.setAttribute('aria-pressed','false')});btn.classList.add("on");btn.setAttribute('aria-pressed','true');render();
 }
 function tog(btn){
   S.mood=null;document.querySelectorAll(".mood-pill").forEach(b=>b.classList.remove("on"));
@@ -998,7 +1300,7 @@ function tog(btn){
   render();
 }
 function clearAll(){
-  S.mood=null;S.energy=[];S.category=[];S.time="7days";S.price="any";S.dist=30;
+  S.mood=null;S.energy=[];S.category=[];S.time="7days";S.price="any";S.dist=60;
   document.querySelectorAll(".mood-pill,[data-t]").forEach(b=>b.classList.remove("on","on-low","on-med","on-high"));
   document.querySelectorAll("[data-g='time']").forEach(b=>b.classList.remove("on"));
   document.querySelector("[data-g='time'][data-v='7days']").classList.add("on");
@@ -1006,26 +1308,17 @@ function clearAll(){
   document.querySelector("[data-g='price'][data-v='any']").classList.add("on");
   document.querySelectorAll("[data-g='dist']").forEach(b=>b.classList.remove("on"));
   document.querySelector("[data-g='dist'][data-v='30']").classList.add("on");
-  animRender();
+  render();
 }
 
 /* ── card actions ── */
-function toggleSave(id,ev){ev.stopPropagation();const i=S.saved.indexOf(id);if(i>-1){S.saved.splice(i,1);}else{S.saved.push(id);const btn=ev.currentTarget;btn.classList.add("save-pop");setTimeout(()=>btn.classList.remove("save-pop"),400);}render();try{localStorage.setItem('wtd-saved',JSON.stringify(S.saved));}catch(e){}}
+function toggleSave(id,ev){ev.stopPropagation();const i=S.saved.indexOf(id);if(i>-1){S.saved.splice(i,1);}else{S.saved.push(id);const btn=ev.currentTarget;btn.classList.add("save-pop");setTimeout(()=>btn.classList.remove("save-pop"),400);}render();}
 function hideEv(id,ev){ev.stopPropagation();S.hidden.add(id);render();}
 function unhideAll(){S.hidden.clear();render();}
-function clearSaved(){S.saved=[];try{localStorage.removeItem('wtd-saved');}catch(e){}render();}
+function clearSaved(){S.saved=[];render();}
 function toggleOpen(id,ev){ev.stopPropagation();S.open.has(id)?S.open.delete(id):S.open.add(id);render();}
 
 render();
-/* ── section header scroll reveal ── */
-(function(){
-  const io=new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{
-      if(e.isIntersecting){e.target.classList.add("revealed");io.unobserve(e.target);}
-    });
-  },{threshold:0.15});
-  document.querySelectorAll(".sec-hdr").forEach(h=>io.observe(h));
-})();
 </script>
 </body>
 </html>
